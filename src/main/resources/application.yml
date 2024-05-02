@@ -1,0 +1,17 @@
+spring:
+  h2:
+    console:
+      enabled: 'true'
+  datasource:
+    url: jdbc:h2:mem:customer
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: 'true'
+directory:
+  path: c:/data
+data:
+  load:
+    url: http://localhost:8080/customer/v1/registerCustomer
+  fetch:
+    url: http://localhost:8080/customer/v1/findCustomer/ref
